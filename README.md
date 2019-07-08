@@ -39,7 +39,7 @@ After finishing this project, you'll definitely learn some more about static var
 # Returning values:
 1 | Line read.
 
-0 | No read, EOF.
+0 | EOF.
 
 -1 | Error.
 
