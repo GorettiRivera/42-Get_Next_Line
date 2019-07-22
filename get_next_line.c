@@ -24,7 +24,6 @@ int		ft_nl(char **str, char **line, int fd)
 	{
 		*line = ft_strsub(str[fd], 0, len);
 		temp = ft_strdup(str[fd] + len + 1);
-		free(str[fd]);
 		str[fd] = temp;
 	}
 	else if (str[fd][len] == '\0')
@@ -48,7 +47,6 @@ int		get_next_line(const int fd, char **line)
 		if (string[fd] == NULL)
 			string[fd] = ft_strnew(1);
 		temp = ft_strjoin(string[fd], buffer);
-		free(string[fd]);
 		string[fd] = temp;
 		if (ft_strchr(buffer, '\n'))
 			break ;
